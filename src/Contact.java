@@ -16,6 +16,10 @@ class Contact implements Comparable<Contact>{
         this.birthday = birthday;
         this.notes = notes;
     }
+        public int compareTo(String a){
+        
+        return this.getContactName().compareTo( a ) ;
+    }
     
     public int compareTo(Contact a){
         
